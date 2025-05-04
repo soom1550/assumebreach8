@@ -1,57 +1,31 @@
 <!DOCTYPE html>
-
 <html lang="ar">
-
 <head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Assume Breach Game</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
-
-    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js"></script>
-
-    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assume Breach - Simulation</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+  <div class="overlay">
+    <div class="container">
+      <h1 class="title">تحدي الاختراق الوهمي</h1>
 
-    <h1>Assume Breach Game</h1>
-
-
-
-    <div id="loginForm">
-
-        <h2>Login</h2>
-
+      <div id="loginForm" class="card">
+        <h2>تسجيل الدخول</h2>
         <input type="email" id="email" placeholder="البريد الإلكتروني" />
-
         <input type="password" id="password" placeholder="كلمة المرور" />
+        <button onclick="login()">دخول</button>
+      </div>
 
-        <button onclick="login()">تسجيل الدخول</button>
-
+      <div id="gameArea" class="card" style="display:none;">
+        <h2>اللعبة بدأت!</h2>
+        <p>قم بمحاكاة التصرف بعد حدوث اختراق وافترض أنك تحت هجوم.</p>
+        <button onclick="endGame(Math.floor(Math.random() * 100))">إنهاء اللعبة</button>
+      </div>
     </div>
+  </div>
 
-
-
-    <div id="gameArea" style="display: none;">
-
-        <!-- محتوى اللعبة سيظهر هنا -->
-
-        <button onclick="endGame(100)">نهاية اللعبة</button>
-
-    </div>
-
-
-
-    <script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
-
 </html>
