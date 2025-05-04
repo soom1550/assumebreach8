@@ -13,7 +13,7 @@ async function login() {
 
 async function saveResult(username, result) {
   try {
-    const response = await fetch("https://assume-backend.onrender.com/api/results", {
+    const response = await fetch("https://assume-breach-backend.onrender.com/api/results", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
