@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="ar">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Assume Breach Game</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+
+</head>
+
+<body>
+
+    <h1>Assume Breach Game</h1>
+
+
+
+    <div id="loginForm">
+
+        <h2>Login</h2>
+
+        <input type="email" id="email" placeholder="البريد الإلكتروني" />
+
+        <input type="password" id="password" placeholder="كلمة المرور" />
+
+        <button onclick="login()">تسجيل الدخول</button>
+
+    </div>
+
+
+
+    <div id="gameArea" style="display: none;">
+
+        <!-- محتوى اللعبة سيظهر هنا -->
+
+        <button onclick="endGame(100)">نهاية اللعبة</button>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
