@@ -1,1 +1,61 @@
-body { font-family: Arial, sans-serif; background-color: #f4f4f4; text-align: center; padding-top: 50px; } #loginForm { display: flex; flex-direction: column; margin: 0 auto; width: 300px; padding: 20px; background-color: #fff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); } input { margin: 10px 0; padding: 10px; border: 1px solid #ddd; border-radius: 5px; } button { padding: 10px; background-color: #28a745; color: white; border: none; border-radius: 5px; cursor: pointer; } button:hover { background-color: #218838; }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', monospace;
+  direction: rtl;
+  background: #0f0f0f;
+  color: #00ff88;
+}
+
+.overlay {
+  background: linear-gradient(135deg, #0f0f0f 70%, #1a1a1a);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 500px;
+}
+
+.title {
+  text-align: center;
+  color: #00ff88;
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: #111;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00ff88;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  background: #222;
+  color: #00ff88;
+  font-size: 16px;
+  border-bottom: 2px solid #00ff88;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #00ff88;
+  color: black;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+button:hover {
+  background: #00cc66;
+}
